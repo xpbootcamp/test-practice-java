@@ -8,8 +8,12 @@
 针对上面的需求描述，对应的Tasking已经拆分好了，请你基于Tasking完成用户注册需求。
 
 ### Tasking
-- Given 有效的用户名和密码 When 用户注册 Then 注册成功
-- Given 无效的用户名和密码 When 用户注册 Then 注册失败，提示用户名格式不对！
+- Given 有效的用户名（lisa）和密码（lisa123） When 用户注册 Then 注册成功
+- Given 无效的用户名（li,sa）和密码(lisa123) When 用户注册 Then 注册失败，提示用户名格式不对！
+- Given 用户名（lisa）和无效密码(lisa,123) When 用户注册 Then 注册失败，提示用户名格式不对！
+- Given 无效的用户名（long long long long long long long long long long name）和密码(lisa123) When 用户注册 Then 注册失败，提示用户名长度超过20！
+- Given 用户名（lisa）和无效的密码(long long long long long long long  long  password) When 用户注册 Then 注册失败，提示密码长度超过20
+
 
 ### Note：
 - 需要遵循TDD的节奏开发

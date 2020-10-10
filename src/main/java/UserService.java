@@ -1,11 +1,11 @@
 public class UserService {
-    public UserRepositry userRepositry;
+    public UserRepository userRepository;
 
-    public UserService(UserRepositry userRepositry) {
-        this.userRepositry = userRepositry;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     public long register(String userName, String password) {
-        return userRepositry.save(userName, password);
+        return userRepository.save(userName, password);
     }
 }

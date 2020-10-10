@@ -1,10 +1,10 @@
 import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class UserRepositry {
+public class UserRepository {
     public HashMap<Long, User> users;
 
-    public UserRepositry() {
+    public UserRepository() {
         users = new HashMap<>();
     }
 
